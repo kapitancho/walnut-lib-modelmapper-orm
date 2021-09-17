@@ -13,7 +13,7 @@
 	},
 	"require": {
 		"walnut/lib_modelmapper": "^0.0.1",
-		"walnut/lib_dborm": "^0.0.1"
+		"walnut/lib_dborm": "^0.0.2"
 	},
 	"require-dev": {
 		"walnut/lib_dbquery_pdo": "^0.0.1",
