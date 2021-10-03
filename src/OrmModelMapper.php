@@ -7,7 +7,6 @@ use Walnut\Lib\DbOrm\RelationalStorageSynchronizer;
 use Walnut\Lib\DbQueryBuilder\Expression\RawExpression;
 use Walnut\Lib\DbQueryBuilder\QueryPart\QueryFilter;
 use Walnut\Lib\DbQueryBuilder\Quoter\SqlQuoter;
-use Walnut\Lib\ModelMapper\ConditionChecker;
 use Walnut\Lib\ModelMapper\ModelBuilder;
 use Walnut\Lib\ModelMapper\ModelMapper;
 use Walnut\Lib\ModelMapper\ModelParser;
@@ -88,14 +87,14 @@ final class OrmModelMapper implements ModelMapper {
 		}
 	}
 
-	public function byCondition(ConditionChecker $conditionChecker): array {
+	public function byCondition(callable $conditionChecker): array {
 		return array_values(
 			array_filter(
 				$this->all(),
 				/**
 			      * @param T $item
 			      */
-				static fn(object $item) => $conditionChecker->checkCondition($item)
+				static fn(object $item) => $conditionChecker($item)
 			)
 		);
 	}

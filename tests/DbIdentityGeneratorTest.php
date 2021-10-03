@@ -10,7 +10,6 @@ use Walnut\Lib\DbOrm\DataModelFactory;
 use Walnut\Lib\DbQuery\Pdo\PdoConnector;
 use Walnut\Lib\DbQuery\Pdo\PdoQueryExecutor;
 use Walnut\Lib\DbQueryBuilder\Quoter\SqliteQuoter;
-use Walnut\Lib\ModelMapper\ConditionChecker;
 use Walnut\Lib\ModelMapper\ModelBuilder;
 use Walnut\Lib\ModelMapper\ModelBuilderFactory;
 use Walnut\Lib\ModelMapper\ModelParser;
