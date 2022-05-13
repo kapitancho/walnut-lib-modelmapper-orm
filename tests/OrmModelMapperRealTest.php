@@ -129,7 +129,7 @@ class OrmModelMapperRealTest extends TestCase {
 			fn(object $target): bool => $target->id === 'cl-1'
 		));
 
-		$this->assertTrue( $mapper->exists($firstClient->id));
+		$this->assertTrue($mapper->exists($firstClient->id));
 		$this->assertNotNull($mapper->byId($firstClient->id));
 		$this->assertInstanceOf(Client::class, $mapper->byId($firstClient->id));
 		$this->assertEquals('Client 1', $mapper->byId($firstClient->id)->name);

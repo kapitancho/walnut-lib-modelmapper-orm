@@ -20,9 +20,9 @@ final class DbModelIdentityGeneratorFactory implements ModelIdentityGeneratorFac
 	 * @param QueryExecutor $queryExecutor
 	 */
 	public function __construct(
-		private /*readonly*/ OrmModelMapperConfiguration $configuration,
-		private /*readonly*/ DataModelBuilder $dataModelBuilder,
-		private /*readonly*/ QueryExecutor $queryExecutor,
+		private readonly OrmModelMapperConfiguration $configuration,
+		private readonly DataModelBuilder $dataModelBuilder,
+		private readonly QueryExecutor $queryExecutor,
 	) {}
 
 	public function getIdentityGenerator(string $className): IdentityGenerator {

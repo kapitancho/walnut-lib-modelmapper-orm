@@ -25,12 +25,12 @@ final class OrmModelMapper implements ModelMapper {
 	 * @param string $keyColumnName
 	 */
 	public function __construct(
-		private /*readonly*/ RelationalStorageFetcher $fetcher,
-		private /*readonly*/ RelationalStorageSynchronizer $synchronizer,
-		private /*readonly*/ ModelBuilder $modelBuilder,
-		private /*readonly*/ ModelParser $modelParser,
-		private /*readonly*/ SqlQuoter $sqlQuoter,
-		private /*readonly*/ string $keyColumnName,
+		private readonly RelationalStorageFetcher $fetcher,
+		private readonly RelationalStorageSynchronizer $synchronizer,
+		private readonly ModelBuilder $modelBuilder,
+		private readonly ModelParser $modelParser,
+		private readonly SqlQuoter $sqlQuoter,
+		private readonly string $keyColumnName,
 	) {}
 
 	private function fetch(string $entryId): ?array { //TODO

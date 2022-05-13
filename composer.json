@@ -13,13 +13,13 @@
 	},
 	"require": {
 		"walnut/lib_identitygenerator": ">=0.0.1",
-		"walnut/lib_modelmapper": ">=0.0.4",
-		"walnut/lib_dborm": ">=0.0.2",
-		"php": ">=8.0.0"
+		"walnut/lib_modelmapper": ">=0.0.5",
+		"walnut/lib_dborm": ">=0.0.3",
+		"php": ">=8.1.0"
 	},
 	"require-dev": {
-		"walnut/lib_dbquery_pdo": "^0.0.1",
-		"vimeo/psalm": "^4.9.3",
-		"phpunit/phpunit": "^9.5.9"
+		"walnut/lib_dbquery_pdo": "^0.0.3",
+		"vimeo/psalm": "^4.23.0",
+		"phpunit/phpunit": "^9.5.20"
 	}
 }

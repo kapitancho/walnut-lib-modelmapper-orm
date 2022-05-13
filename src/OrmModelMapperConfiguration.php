@@ -7,7 +7,7 @@ final class OrmModelMapperConfiguration {
 	 * @param class-string[] $ormModels
 	 */
 	public function __construct(
-		private /*readonly*/ array $ormModels
+		private readonly array $ormModels
 	) {}
 
 	/**

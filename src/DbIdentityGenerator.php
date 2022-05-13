@@ -15,9 +15,9 @@ final class DbIdentityGenerator implements IdentityGenerator {
 	 * @param string $columnName
 	 */
 	public function __construct(
-		private /*readonly*/ QueryExecutor $queryExecutor,
-		private /*readonly*/ string $tableName,
-		private /*readonly*/ string $columnName
+		private readonly QueryExecutor $queryExecutor,
+		private readonly string $tableName,
+		private readonly string $columnName
 	) {}
 
 	private function syncIdentity(): void {

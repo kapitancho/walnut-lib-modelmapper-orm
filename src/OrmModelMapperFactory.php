@@ -19,12 +19,12 @@ final class OrmModelMapperFactory implements ModelMapperFactory {
 	 * @param SqlQuoter $sqlQuoter
 	 */
 	public function __construct(
-		private /*readonly*/ OrmModelMapperConfiguration $configuration,
-		private /*readonly*/ DataModelBuilder $dataModelBuilder,
-		private /*readonly*/ RelationalStorageFactory $dataModelFactory,
-		private /*readonly*/ ModelBuilderFactory $modelBuilderFactory,
-		private /*readonly*/ ModelParserFactory $modelParserFactory,
-		private /*readonly*/ SqlQuoter $sqlQuoter
+		private readonly OrmModelMapperConfiguration $configuration,
+		private readonly DataModelBuilder $dataModelBuilder,
+		private readonly RelationalStorageFactory $dataModelFactory,
+		private readonly ModelBuilderFactory $modelBuilderFactory,
+		private readonly ModelParserFactory $modelParserFactory,
+		private readonly SqlQuoter $sqlQuoter
 	) {}
 
 	/**
